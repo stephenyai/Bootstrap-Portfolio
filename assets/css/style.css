@@ -1,0 +1,175 @@
+/*why won't words wrap around the picture?? - use float
+background image not showing - had to go back out the folder - so use '..'
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Delius Swash Caps', cursive;
+}
+body {
+	background-image: url("../images/ricepaper.png");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Header CSS */ 
+
+#mainHeader {
+	border-bottom: 2px solid #cccccc;
+	background-color: #ffffff;
+	border-color: #cccccc;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+#myName {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-size: 35px;
+	padding: 15px;
+}
+
+.links {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.about, .portfolio, .contacts {
+	padding: 0 20px;
+	color: #777777;
+}
+
+.about, .portfolio {
+	border-right: 1px solid #cccccc;
+}
+
+/*Index content*/
+
+#content {
+	width: 960px;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #dddddd;
+	flex: 1 0 auto;
+	background-color: #ffffff;
+}
+
+#text {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: flex-start;
+	float: left;	
+}
+
+
+/* Contact CSS */
+
+#mainContact {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+#contact {
+	width: 960px;
+	margin: 40px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+.inputText {
+	display: flex;
+	align-items: flex-start;	
+	flex-direction: column;
+}
+
+#messageText {
+	height: 200px;
+}
+
+input {
+	width: 100%;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size: 30px;
+	padding: 10px 0px 20px 0px;
+	border-bottom: 2px solid #dddddd;
+	margin-bottom: 30px;
+}
+
+img {
+	margin: 15px;
+}
+
+p {
+	line-height: 1.6;
+	color: #777777;
+}
+
+.words {
+	float: left;
+}
+
+#nameText, #emailText {
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+#submit {
+	margin-top: 10px;
+	height: 30px;
+	width: 70px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+}
+
+/* Portfolio CSS */
+
+#photoSection {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+#photos {
+	width: 960px;
+	margin: 40px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+}
+
+/* Footer CSS */
+
+footer {
+	flex-shrink: 0;
+	border-top: 8px solid #4aaaa5;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: #ffffff;
+	background-color: #777777;
+
+}
+
