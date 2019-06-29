@@ -145,6 +145,9 @@ p {
 	background-color: #4aaaa5;
 }
 
+.navbar-nav {
+	margin-left: auto;
+}
 /*Portofolio CSS */
 
 #photoSection {
